@@ -21,9 +21,8 @@ export default  function Content (){
                 <div className="left__content">
                 {listProduct
                    .filter((products) => products.status === "big")
-          .map((product, index) => (
+          .map((product) => (
             <HotNew
-              key={index}
               title={product.title}
               image={product.image}
               detail={product.detail}
@@ -33,9 +32,8 @@ export default  function Content (){
                 <div className="right__content">
                 {listProduct
             .filter((products) => products.status === "smaill")
-            .map((product, index) => (
+            .map((product) => (
               <New
-                key={index}
                 title={product.title}
                 image={product.image}
                 detail={product.detail}

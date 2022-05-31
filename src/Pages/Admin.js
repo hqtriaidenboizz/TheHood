@@ -8,7 +8,6 @@ class Crud extends React.Component{
           id:'',
           title:"",
           image:"",
-          action:"ADD ITEM",
           detail:"",
           items:[]
           
@@ -65,13 +64,11 @@ class Crud extends React.Component{
         }
     }
     
-    Edit = (item,index)=>{
+    Edit = (item)=>{
       this.setState({
-        action:'UPDATE ITEM',
         title:item.title,
         image:item.image,
         detail:item.detail,
-        index:index,
         id: item.id
       });
     }
@@ -91,8 +88,7 @@ class Crud extends React.Component{
       this.setState({
         title:"",
         image:"",
-        detail:"",
-         action:'ADD_ITEM'
+        detail:""
       })
       
     }
